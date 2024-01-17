@@ -260,7 +260,7 @@ footer > h3 {
     }
 
     #about-me-div {
-        grid-template-columns: 1fr;
+        display: block;
         text-align: center;
     }
 
@@ -318,6 +318,10 @@ footer > h3 {
         grid-template-rows: 1fr 1fr;
         gap: 10%;
         margin-bottom: 10%;
+    }
+
+    #about-me-div {
+        margin-top: 100px;
     }
 
     #projects-div {
