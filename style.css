@@ -8,6 +8,7 @@ body {
 }
 
 nav {
+    width: 100%;
     padding: 10px;
     background-color:#EE4E34;
     box-shadow: 0px 10px 1px black;
@@ -20,6 +21,7 @@ nav > h2 {
     color: #FCEDDA;
     margin: 0;
     letter-spacing: -0.3rem;
+    padding-left: 2%;
 }
 
 #main-hero-div {
@@ -69,11 +71,12 @@ nav > h2 {
     margin-bottom: 30px;
     padding: 10px;
     font-family: "Domine", serif;
-    background-color: #EE4E34;
+    background-color: rgb(240, 220, 67);
     font-size: 2rem;
     border: none;
     box-shadow: 5px 5px 1px black;
-    color: #FCEDDA;
+    color: black;
+    font-weight: 700;
     transition: all 0.1s;
 }
 
@@ -200,6 +203,13 @@ a:hover {
     text-align: center;
 }
 
+#projects-text > p {
+    font-family: "Domine", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(57, 56, 56);
+}
+
 .project-card {
     background-color: #FCEDDA;
     width: 300px;
@@ -255,6 +265,14 @@ footer > h3 {
 }
 
 @media (max-width: 1200px){
+    #hero-text-div{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     #skills-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -308,6 +326,7 @@ footer > h3 {
 @media (max-width: 650px){
     #main-hero-div {
         gap:0;
+        height: 1000px;
     }
 
     #skills-grid{
@@ -317,6 +336,7 @@ footer > h3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 10%;
+        margin-top: 10%;
         margin-bottom: 10%;
     }
 
@@ -327,5 +347,6 @@ footer > h3 {
     #projects-div {
         grid-template-columns: 1fr;
         gap: 0px;
+        text-align: center;
     }
 }
