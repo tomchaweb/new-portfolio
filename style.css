@@ -242,11 +242,19 @@ a:hover {
     font-family: "Poppins", sans-serif;
     font-size: 4rem;
     font-weight: 800;
+    border-bottom: 5px solid #EE4E34;
 }
 
 .project-card >  a {
     font-size: 2rem;
     text-decoration: none;
+}
+
+.project-card  > p {
+    font-size: 1.6rem;
+    font-family: "Domine", serif;
+    font-weight: 600;
+    color: rgb(57, 56, 56);
 }
 
 footer {
@@ -263,6 +271,10 @@ footer > h3 {
     font-family: "Domine", serif;
     font-weight: 400;
     color: #FCEDDA;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width: 1200px){
