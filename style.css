@@ -1,6 +1,7 @@
 html {
     font-size: 10px;
-    background-color: #FCEDDA;
+    /* background-color: #FCEDDA; */
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
 body {
@@ -11,8 +12,9 @@ nav {
     width: 100%;
     margin: 0;
     /* padding: 10px; */
-    background-color:#EE4E34;
-    box-shadow: 0px 10px 1px black;
+    /* background-color:#EE4E34; */
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    /* box-shadow: 0px 10px 1px black; */
 }
 
 nav > h2 {
@@ -33,7 +35,7 @@ nav > h2 {
     justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 #hero-text-div {
@@ -46,7 +48,7 @@ nav > h2 {
     margin-bottom: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 800;
-    font-size: 10rem;
+    font-size: 11rem;
     letter-spacing: -0.3rem;
     line-height: 1;
     text-shadow: 2px 2px 1px #EE4E34 ;
@@ -71,13 +73,14 @@ nav > h2 {
 #hero-text-div > button {
     margin-bottom: 30px;
     padding: 10px;
-    font-family: "Domine", serif;
+    font-family: "Poppins", sans-serif;
     background-color: rgb(240, 220, 67);
     font-size: 2rem;
     border: none;
     box-shadow: 5px 5px 1px black;
     color: black;
     font-weight: 700;
+    letter-spacing: -0.01rem;
     transition: all 0.1s;
 }
 
@@ -104,10 +107,12 @@ a:hover {
 
 #avatar {
     width: 400px;
-    border: 10px solid black;
-    /* border-radius: 50%; */
-    background-color: #EE4E34;
-    box-shadow: 5px 5px 1px #EE4E34;
+    /* border: 10px solid black; */
+    border-radius: 200px 200px 200px 10px;
+    /* background-color: #EE4E34; */
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    /* box-shadow: 5px 5px 1px #EE4E34; */
+    /* box-shadow: 5px 5px 1px black; */
     justify-self: right;
 }
 
@@ -122,8 +127,11 @@ a:hover {
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
-    border: 10px solid black;
-    box-shadow: 5px 5px 1px #EE4E34;
+    /* border: 10px solid black; */
+    border-radius: 50px 10px 50px 10px;
+    box-shadow: 5px 5px 5px #EE4E34;
+    background-color: #f4aea4;
+    
 }
 
 #skills-grid > h2 {
@@ -140,7 +148,8 @@ a:hover {
 .skill-icon {
     padding: 10px;;
     border: 10px solid #EE4E34;
-    box-shadow: 10px 10px 1px black;
+    border-radius: 10px 30px;
+    /* box-shadow: 10px 10px 15px rgb(80, 80, 80); */
     transition: all 0.2s;
 }
 
@@ -214,6 +223,7 @@ a:hover {
 .project-card {
     background-color: #FCEDDA;
     width: 300px;
+    height: 300px;
     margin:0;
     padding: 10px;
     justify-self: center;
@@ -221,10 +231,11 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    border: 10px solid black;
+    /* border: 10px solid black; */
     border-radius: 10px;
-    box-shadow: 5px 5px 1px #EE4E34;
+    box-shadow: 5px 5px 10px #EE4E34;
     transition: all 0.2s;
+    overflow: hidden;
 }
 
 .project-card > img {
@@ -235,6 +246,7 @@ a:hover {
     box-shadow: none;
     /* transform: translateX(5px) translateY(5px); */
     transform: scale(1.2);
+    height: 400px;
 }
 
 .project-card > h3 {
@@ -259,9 +271,10 @@ a:hover {
 
 footer {
     margin-top: 5%;
-    background-color: #EE4E34;;
+    /* background-color: #EE4E34; */
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
     padding: 20px;
-    border-top: 10px solid black;
+    /* border-top: 10px solid black; */
 }
 
 footer > h3 {
@@ -327,6 +340,8 @@ footer > h3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 10%;
+        background-color: transparent;
+        box-shadow: none;
     }
 
     #skills-grid > h2 {
