@@ -94,7 +94,7 @@ header > h2 {
 }
 
 #hero-text-div > button:hover {
-    transform: translateX(+2px) translateY(+2px);
+    transform: translateY(+2px);
     box-shadow: none;
     cursor: pointer;
 
@@ -145,6 +145,10 @@ a:hover {
     /* background-color: #f4aea4; */
     background-color: #FCEDDA;
     
+}
+
+#about-me-div > #skills-grid {
+    grid-template-columns: 1fr 1fr;
 }
 
 #skills-grid > h2 {
