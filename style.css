@@ -11,6 +11,9 @@ body {
 header {
     width: 100%;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     /* padding: 10px; */
     /* background-color:#EE4E34; */
     background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
@@ -27,6 +30,27 @@ header > h2 {
     padding-left: 2%;
 }
 
+#header-links {
+    padding-right: 2% ;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    gap: 20px
+}
+
+#header-links > a {
+    color: #FCEDDA;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    /* text-transform: uppercase; */
+    transition: all 0.1s;
+}
+
+#header-links > a:hover {
+    color: #c7bcae;
+}
+
 #main-hero-div {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -36,6 +60,7 @@ header > h2 {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 3%;
+    animation: slide-up 1s ease;
 }
 
 #hero-text-div {
@@ -107,11 +132,11 @@ header > h2 {
 
 a {
     color: black;
-    transition: all 0.3s;
+    transition: all 0.1s;
 }
 
 a:hover {
-   color: grey;
+   color: #4f4f4f;
 }
 
 #avatar {
@@ -124,6 +149,7 @@ a:hover {
     /* box-shadow: 5px 5px 1px black; */
     justify-self: right;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* animation: slide-up 0.4s ease; */
 }
 
 #skills-grid {
@@ -178,7 +204,7 @@ a:hover {
 
 #about-me-div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
@@ -313,6 +339,17 @@ footer > p {
     display: none;
 }
 
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width:1500px){
    #hero-text-div > h1{
         font-size: 8rem;
@@ -387,6 +424,11 @@ footer > p {
 }
 
 @media (max-width: 650px){
+
+    #header-links {
+        display: none;
+    }
+
     #main-hero-div {
         gap:0;
         height: 700px;
